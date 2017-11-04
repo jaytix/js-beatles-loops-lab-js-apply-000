@@ -24,10 +24,14 @@ function iLoveTheBeatles(num) {
   var arr = [];
   var i = 0;
 
-  do {
+  if(num < 15) {
+    do {
+      arr.push("I love the Beatles!");
+      i++;
+    } while (i <= num);
+  } else {
     arr.push("I love the Beatles!");
-    i++;
-  } while (i <= num);
-
+  }
+  
   return arr;
 }
